@@ -1,0 +1,4 @@
+DESCRIPTION,ID,NAME,PRODUCTPRICESHOPS
+,1,Apple,ProductPriceShop(product=Product(name=Apple", description=)", shop=id=1", valuePrice=13.00", datePrice=2023-05-21)
+,2,Chicken Breast,ProductPriceShop(product=Product(name=Chicken Breast", description=)", shop=id=2", valuePrice=26.00", datePrice=2023-09-01)
+,3,Bread,ProductPriceShop(product=Product(name=Bread", description=)", shop=id=1", valuePrice=23.00", datePrice=2023-05-21)
