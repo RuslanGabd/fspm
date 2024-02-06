@@ -1,10 +1,5 @@
 package org.ruslan;
 
-import org.ruslan.dao.ProductRepository;
-import org.ruslan.services.ProductPriceShopServices;
-import org.ruslan.services.ProductService;
-
-
 public class Main {
     public static void main(String[] args) throws Exception {
 // ProductRepository productRepository = new ProductRepository();
@@ -14,14 +9,20 @@ public class Main {
 //
 //        Optional<ProductPriceShop> productPriceShop =   productPriceShopRepository.findById(1L);
 //        System.out.println(productPriceShop.map(ProductPriceShop::toString).orElse(null));
-        ProductService productService = new ProductService();
+       // ProductService productService = new ProductService();
       //  productService.saveProduct(new Product("beer",null,null,null));
        // System.out.println(productService.getProductById(1L));
-        ProductRepository productRepository = new ProductRepository();
+       // ProductRepository productRepository = new ProductRepository(entityManager);
+
+     //   System.out.println( productService.listProductDto()) ;
         //productService.exportProductToCsv();
-        productService.exportProductToCsv();
-        ProductPriceShopServices productPriceShopServices = new ProductPriceShopServices();
-      // productPriceShopServices.exportProductPriceShopToJson();
+       // productService.exportProductToCsv();
+       // ProductPriceShopServices productPriceShopServices = new ProductPriceShopServices(productPriceShopRepository, productRepository, shopRepository, productPriceShopMapper);
+      // productPriceShopServices.importProductPriceShopFromCsvToDateBase();
+
+
+//        UserRepository userRepository = new UserRepository();
+//        System.out.println(userRepository.findByUsername("admin_name"));
 
       //categoryOfProductRepository.save(new CategoryOfProduct("FOOD2"));
         // productRepository.save("Bread","")
@@ -43,5 +44,6 @@ public class Main {
 //
 //
 //        productRepository.save(new Product("Bread", new ArrayList<int>(5,5,4)))
+
     }
 }

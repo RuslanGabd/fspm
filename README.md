@@ -12,7 +12,7 @@ Profile editing.
 
 Directory of product categories, directory of trading points.
 
-View a list of products by categories. Search and filtering.
+View a list of products by categories. Search and filtering
 
 Ability to add/edit/delete a product.
 

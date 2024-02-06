@@ -1,0 +1,3 @@
+select up1_0.id,up1_0.date_birth,up1_0.email,up1_0.full_name,u1_0.id,u1_0.password,u1_0.username,lr1_0.userid,lr1_1.id,lr1_1.role_name from user_profile up1_0 left join user u1_0 on u1_0.id=up1_0.user_id left join user_roles lr1_0 on u1_0.id=lr1_0.userid left join role lr1_1 on lr1_1.id=lr1_0.roleid where up1_0.user_id=?
+
+select up1_0.id,up1_0.date_birth,up1_0.email,up1_0.full_name,u1_0.id,u1_0.password,u1_0.username,lr1_0.userid,lr1_1.id,lr1_1.role_name from user_profile up1_0 left join user u1_0 on u1_0.id=up1_0.user_id left join user_roles lr1_0 on u1_0.id=lr1_0.userid left join role lr1_1 on lr1_1.id=lr1_0.roleid where up1_0.user_id=?

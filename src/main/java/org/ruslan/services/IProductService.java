@@ -1,6 +1,6 @@
 package org.ruslan.services;
 
-import org.ruslan.entity.Product;
+import org.ruslan.core.entity.Product;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,6 +16,6 @@ public interface IProductService {
 
     public List<Product> getList();
 
-    boolean deleteProduct(Integer productId);
+    boolean deleteProduct(Long productId);
 
 }

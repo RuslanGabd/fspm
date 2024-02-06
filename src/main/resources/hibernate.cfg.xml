@@ -18,13 +18,13 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">validate</property>
-        <mapping class="org.ruslan.entity.Product"/>
-        <mapping class="org.ruslan.entity.Shop"/>
-        <mapping class="org.ruslan.entity.CategoryOfProduct"/>
-        <mapping class="org.ruslan.entity.ProductPriceShop"/>
-        <mapping class="org.ruslan.entity.CategoryOfShop"/>
-       <mapping class="org.ruslan.entity.ProductCategory"/>
-        <mapping class="org.ruslan.entity.ShopCategory"/>
+        <mapping class="org.ruslan.core.entity.Product"/>
+        <mapping class="org.ruslan.core.entity.Shop"/>
+        <mapping class="org.ruslan.core.entity.CategoryOfProduct"/>
+        <mapping class="org.ruslan.core.entity.ProductPriceShop"/>
+        <mapping class="org.ruslan.core.entity.CategoryOfShop"/>
+       <mapping class="org.ruslan.core.entity.ProductCategory"/>
+        <mapping class="org.ruslan.core.entity.ShopCategory"/>
 
 <!--        <mapping class="org.ruslan.entity.ProductCategory"/>-->
 <!--        <mapping class="org.ruslan.entity.ShopCategory"/>-->

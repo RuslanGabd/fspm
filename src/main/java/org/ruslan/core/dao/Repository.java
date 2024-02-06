@@ -1,4 +1,6 @@
-package org.ruslan.services;
+package org.ruslan.core.dao;
+
+
 
 import org.ruslan.core.entity.BaseEntity;
 
@@ -8,14 +10,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-public interface IService<K extends Serializable, E extends BaseEntity<K>>{
-     E save(E entity);
+public interface Repository<K extends Serializable, E extends BaseEntity<K>> {
+
+    E save(E entity);
 
     void delete(K id);
 
     void update(E entity);
 
-    default Optional<E> findById(K id) {
+    default Optional<E>  findById(K id) {
         return findById(id, Collections.emptyMap());
     }
 
@@ -23,5 +26,6 @@ public interface IService<K extends Serializable, E extends BaseEntity<K>>{
     Optional<E> findById(K id, Map<String, Object> properties);
 
     List<E> findAll();
+
 
 }
